@@ -45,8 +45,8 @@ nav ul li a:hover {
    Home Section Box
    ========================= */
 .home-box {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   margin: 50px auto; /* Centers the box horizontally */
   padding: 20px;
   background-color: #fff;
