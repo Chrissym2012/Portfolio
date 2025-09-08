@@ -10,7 +10,7 @@ body {
 /* Navigation */
 nav {
   background: #222;
-  padding: 10px;
+  padding: 10 px;
 }
 nav ul {
   list-style: none;
@@ -20,7 +20,7 @@ nav ul {
   justify-content: center; /* Centers items horizontally */
 }
 nav ul li {
-  margin: 0 15px; /* Equal spacing on both sides */
+  margin: 0 15 px; /* Equal spacing on both sides */
 }
 nav ul li a {
   color: white;
@@ -33,13 +33,13 @@ nav ul li a:hover {
 
 /* Home Box Styling */
 .home-box {
-  width: 400px; /* Square width */
-  height: 400px; /* Square height */
-  margin: 50px auto; /* Centers the box horizontally and adds top margin */
-  padding: 20px;
+  width: 400 px; /* Square width */
+  height: 400 px; /* Square height */
+  margin: 50 px auto; /* Centers the box horizontally and adds top margin */
+  padding: 20 px;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 12 px;
+  box-shadow: 0 4 px 10 px rgba (0,0,0,0.2);
 
   display: flex;
   flex-direction: column;
@@ -49,11 +49,11 @@ nav ul li a:hover {
 }
 
 .home-box h1 {
-  margin-bottom: 10px;
+  margin-bottom: 10 px;
 }
 
 .home-box p {
-  margin-bottom: 20px;
+  margin-bottom: 20 px;
   color: #555;
 }
 
@@ -63,45 +63,45 @@ nav ul li a:hover {
 }
 
 .home-box li {
-  margin: 5px 0;
+  margin: 5 px 0;
 }
 
 /* Header */
 header {
   text-align: center;
-  padding: 50px 20px;
+  padding: 50 px 20 px;
   background: #eee;
 }
 header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2.5 em;
 }
 header p {
-  font-size: 1.2em;
+  font-size: 1.2 em;
   color: #555;
 }
 
 /* Sections */
 section {
-  padding: 20px;
+  padding: 20 px;
 }
 section h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  border-bottom: 2 px solid #ddd;
+  padding-bottom: 5  px;
+  margin-bottom: 10 px;
 }
 
 /* Projects */
 .project {
-  margin-bottom: 20px;
-  padding: 15px;
+  margin-bottom: 20 px;
+  padding: 15 px;
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8 px;
+  box-shadow: 0 2 px 4 px rgba (0,0,0,0.1);
 }
 
 /* Contact */
 img {
-  border-radius: 50%;
-  margin-bottom: 15px;
+  border-radius: 50 %;
+  margin-bottom: 15 px;
 }
