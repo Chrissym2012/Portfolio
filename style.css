@@ -31,6 +31,40 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Home Box Styling */
+.home-box {
+  width: 400px; /* Square width */
+  height: 400px; /* Square height */
+  margin: 50px auto; /* Centers the box horizontally and adds top margin */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  text-align: center;      /* Centers text inside */
+}
+
+.home-box h1 {
+  margin-bottom: 10px;
+}
+
+.home-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.home-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-box li {
+  margin: 5px 0;
+}
 
 /* Header */
 header {
