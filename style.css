@@ -1,4 +1,6 @@
-/* General Reset */
+/* =========================
+   General Reset & Defaults
+   ========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,101 +9,151 @@ body {
   color: #333;
 }
 
-/* Navigation */
+/* =========================
+   Navigation
+   ========================= */
 nav {
   background: #222;
-  padding: 10 px;
+  padding: 15px 0;
 }
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Centers items horizontally */
+  justify-content: center; /* Centers nav items */
+  align-items: center;
 }
+
 nav ul li {
-  margin: 0 15 px; /* Equal spacing on both sides */
+  margin: 0 20px;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
 }
+
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Home Box Styling */
+/* =========================
+   Home Section Box
+   ========================= */
 .home-box {
-  width: 400 px; /* Square width */
-  height: 400 px; /* Square height */
-  margin: 50 px auto; /* Centers the box horizontally and adds top margin */
-  padding: 20 px;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto; /* Centers the box horizontally */
+  padding: 20px;
   background-color: #fff;
-  border-radius: 12 px;
-  box-shadow: 0 4 px 10 px rgba (0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center;     /* Centers content horizontally */
-  text-align: center;      /* Centers text inside */
+  justify-content: center; /* Vertical center */
+  align-items: center;     /* Horizontal center */
+  text-align: center;
 }
 
 .home-box h1 {
-  margin-bottom: 10 px;
+  margin-bottom: 10px;
+  font-size: 2em;
 }
 
 .home-box p {
-  margin-bottom: 20 px;
+  margin-bottom: 20px;
   color: #555;
+}
+
+.home-box h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .home-box ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .home-box li {
-  margin: 5 px 0;
+  margin: 5px 0;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 50 px 20 px;
-  background: #eee;
-}
-header h1 {
-  margin: 0;
-  font-size: 2.5 em;
-}
-header p {
-  font-size: 1.2 em;
-  color: #555;
-}
-
-/* Sections */
+/* =========================
+   Projects Section
+   ========================= */
 section {
-  padding: 20 px;
-}
-section h2 {
-  border-bottom: 2 px solid #ddd;
-  padding-bottom: 5  px;
-  margin-bottom: 10 px;
+  padding: 20px;
 }
 
-/* Projects */
+section h1, section h2 {
+  text-align: center;
+}
+
 .project {
-  margin-bottom: 20 px;
-  padding: 15 px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
   background: #fff;
-  border-radius: 8 px;
-  box-shadow: 0 2 px 4 px rgba (0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Contact */
-img {
-  border-radius: 50 %;
-  margin-bottom: 15 px;
+.project h2 {
+  margin-top: 0;
+}
+
+/* =========================
+   Contact Section
+   ========================= */
+section img {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+section ul li {
+  margin: 5px 0;
+}
+
+section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive (Mobile)
+   ========================= */
+@media (max-width: 500px) {
+  .home-box {
+    width: 90%;
+    height: auto; /* Allow box to grow naturally */
+    padding: 30px 15px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
 }
