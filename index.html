@@ -5,57 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christine Melendez Portfolio</title>
   <link rel="stylesheet" href="mystyle.css"> <!-- external CSS link -->
-<style>
-  body {
-    background-color: black;
-    font-family: Arial, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
 
-  h2 {
-    text-align: center;
-    background-color: rgb(209, 164, 15);
-    color: black;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .about-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows it to stack on smaller screens */
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .about-container img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
-    border: 3px solid rgb(209, 164, 15);
-  }
-
-  .about-text {
-    flex: 1; /* Text takes remaining space */
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 700px) {
-    .about-container {
-      flex-direction: column;
+    h1 {
       text-align: center;
+      background-color: rgb(209, 164, 15);
+      color: black;
+      padding: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    h2 {
+      text-align: center;
+      background-color: rgb(209, 164, 15);
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      background-color: black;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      color: rgb(209, 164, 15);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap; /* stacks on smaller screens */
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .about-container img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 5px; /* same as form */
+      border: 1px solid rgb(209, 164, 15); /* gold border like form */
     }
 
     .about-text {
+      flex: 1;
       font-size: 1rem;
+      line-height: 1.6;
     }
-  }
-</style>
+
+    @media (max-width: 700px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Skills and Awards Styling */
+    ul {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      padding-left: 20px;
+    }
+
+    img.award {
+      display: block;
+      max-width: 300px;
+      margin: 10px auto;
+      border: 1px solid rgb(209, 164, 15); /* match form/image style */
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -69,22 +117,22 @@
   </nav>
 
   <!-- Main Header -->
-  <h1>Welcome to my Portfolio</h1>
+  <h1>Welcome to My Portfolio</h1>
 
   <!-- Introduction Section -->
   <div class="about-container">
-  <img src="chrissy.jpg" alt="Chrissy's Photo">
-  <div class="about-text">
-    <p>Hello, my name is Christine Melendez. I am a Digital Media student at the University of Central Florida
-    with a focus on web and social media. My skills include HTML, CSS, content creation, and digital design
-    using tools such as Photoshop and Illustrator. Through my coursework and projects, I have developed experience
-    in building web pages, creating engaging visual content, and blending creativity with technology.
-    I am passionate about pursuing opportunities in digital media, web design, and communications to further grow
-    my professional experience.</p>
-  </div>
+    <img src="chrissy.jpg" alt="Chrissy's Photo">
+    <div class="about-text">
+      <p>Hello, my name is Christine Melendez. I am a Digital Media student at the University of Central Florida
+      with a focus on web and social media. My skills include HTML, CSS, content creation, and digital design
+      using tools such as Photoshop and Illustrator. Through my coursework and projects, I have developed experience
+      in building web pages, creating engaging visual content, and blending creativity with technology.
+      I am passionate about pursuing opportunities in digital media, web design, and communications to further grow
+      my professional experience.</p>
+    </div>
+  </div> <!-- Close about-container -->
 
   <!-- Skills Section -->
-  <br>
   <h2>Skills</h2>
   <ul>
     <li>Web Development: HTML, CSS</li>
@@ -93,20 +141,9 @@
     <li>Creative Problem-Solving and Communication</li>
   </ul>
 
-  <!-- Projects Section -->
-  <br>  
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Bumper Sticker Design:</strong> Created a Florida-themed design called "Sunshine State of Mind."</li>
-    <li><strong>Comic Strip:</strong> Designed "Paws of Destruction," a humorous comic featuring my cat Cinnamon.</li>
-    <li><strong>Gestalt Principle Designs:</strong> Explored proximity, similarity, and continuity in black-and-white artwork.</li>
-    <li><strong>VR Prototype:</strong> Developed a concept for <em>Barista VR</em>, an interactive simulation project.</li>
-  </ul>
-
   <!-- Awards Section -->
-  <br> 
   <h2>Awards</h2>
-  <img src="Dean's List Award.png" alt="Dean's List Award" width="500" height="400">
+  <img src="Dean's List Award.png" alt="Dean's List Award" class="award">
 
 </body>
 </html>
