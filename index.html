@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christine Melendez Portfolio</title>
   <link rel="stylesheet" href="mystyle.css"> <!-- external CSS link -->
+<style>
+  body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    background-color: rgb(209, 164, 15);
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows it to stack on smaller screens */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about-container img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgb(209, 164, 15);
+  }
+
+  .about-text {
+    flex: 1; /* Text takes remaining space */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 700px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+</style>
+  
 </head>
 <body>
   <!-- Navigation -->
