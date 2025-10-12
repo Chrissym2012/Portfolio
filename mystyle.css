@@ -9,7 +9,7 @@ body {
 
 /* Headers */
 h1, h2 {
-  background-color: rgb(209, 164, 15); /* Gold header background */
+  background-color: rgb(252, 185, 0, 1); /* Gold header background */
   padding: 10px;
   margin: 0;
 }
@@ -31,7 +31,7 @@ img {
 
 /* Links */
 a {
-  color: rgb(209, 164, 15);
+  color: rgb(252, 185, 0, 1);
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ nav li {
 }
 
 nav a {
-  color: rgb(209, 164, 15);
+  color: rgb(252, 185, 0, 1);
   text-decoration: none;
   font-weight: bold;
 }
