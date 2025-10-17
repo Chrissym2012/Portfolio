@@ -101,8 +101,8 @@
       with a focus on web and social media. My skills include HTML, CSS, content creation, and digital design
       using tools such as Photoshop and Illustrator. Through my coursework and projects, I have developed experience
       in building web pages, creating engaging visual content, and blending creativity with technology.
-      I am passionate about pursuing opportunities in digital media, web design, and communications to further grow
-      my professional experience.</p>
+      I am passionate about pursuing opportunities in digital media, web design, and communications to grow
+my professional experience further.</p>
     </div>
   </div> 
 
@@ -119,5 +119,21 @@
   <h2>Awards</h2>
   <img src="Dean's List Award.png" alt="Dean's List Award" class="award">
 
+  <!-- Toggle mode -->
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
+  // Toggle and save
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
 </body>
 </html>
